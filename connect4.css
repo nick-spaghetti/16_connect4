@@ -1,28 +1,37 @@
-/* game board table */
+body {
+  background-color: #5B829F;
+}
 
 #board td {
   width: 50px;
   height: 50px;
-  border: solid 1px #666;
+  border-style: none;
+  background-color: #252627;
 }
 
-/* pieces are div within game table cells: draw as colored circles */
-
 .piece {
-  /* TODO: make into circles */
   margin: 5px;
   width: 80%;
   height: 80%;
+  border-radius: 10px;
+  /* circles are boring */
 }
 
-/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+.piece.p1 {
+  background-color: #BB0A21;
+}
 
-/* column-top is table row of clickable areas for each column */
+/*  red and blue are boring */
+.piece.p2 {
+  background-color: #4B88A2;
+}
 
 #column-top td {
-  border: dashed 1px lightgray;
+  border-style: none;
+  /*  outlines are boring */
+  background-color: #D3D4D9;
 }
 
 #column-top td:hover {
-  background-color: gold;
+  background-color: #FFF9FB;
 }
